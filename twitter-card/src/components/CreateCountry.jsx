@@ -37,7 +37,7 @@ function CreateCountry() {
 
     return (
         <div>
-            <input type="text" onChange={(e) => [e, setCountry(e.target.value)]} />
+            <input type="text" onChange={(e) => setCountry(e.target.value)} />
             <button onClick={handleCreateCountry}>Crear País</button>
             <button onClick={handleGetCountry}>Obtener País</button>
             <button onClick={handleUpdateCountry}>Actualizar País</button>
