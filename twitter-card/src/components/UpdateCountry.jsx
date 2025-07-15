@@ -7,7 +7,7 @@ function UpdateCountry() {
     const [infoCountry, setInfoCountry] = useState();
 
     const handleUpdateCountry = async () => {
-        const updatedData = { name: country };
+        const updatedData = { nombre: country };
         const response = await putCountry(country, updatedData);
         setInfoCountry(response);
     };

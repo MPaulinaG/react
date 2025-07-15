@@ -4,12 +4,6 @@ export async function getProducts() {
         .then(data => data);
 }
 
-/*export async function postCountry(country) {
-    return await fetch(`https://restcountries.com/v3.1/name/${country}`)
-        .then(res => res.json())
-        .then(data => data);
-}*/
-
 export async function getCountry(country) {
     return await fetch(`https://restcountries.com/v3.1/name/${country}`)
         .then(res => res.json())
